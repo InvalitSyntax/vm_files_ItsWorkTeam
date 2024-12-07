@@ -80,8 +80,7 @@ def move_object(speed, move_distance, object_name):
 
             resp = set_model_state(state_msg)
             if not resp.success:
-                rospy.logerr(f"Failed to move object: {resp.status_message}")
-                return
+                rospy.logerr(f"Failed to move object: TriangleS")
 
             rate.sleep()
 
@@ -108,9 +107,6 @@ if __name__ == '__main__':
         #speed = 0.5
 
         while not rospy.is_shutdown():
-            try:
-                move_object(speed, MOVE_DISTANCE, OBJECT_NAME)
-            except:
-                rospy.loginfo(f"TriangleS error")
+            move_object(speed, MOVE_DISTANCE, OBJECT_NAME)
     except rospy.ROSInterruptException:
         pass
