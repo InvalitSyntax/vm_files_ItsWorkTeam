@@ -8,6 +8,10 @@ cp -r ./clover5 ./aruco_map_nto_txt /home/clover/.gazebo/models/
 
 # Копирование python-скриптов с заменой
 cp -f ./box.py ./circle.py ./romb.py ./triangle.py /home/clover/catkin_ws/src/clover/clover_simulation/scripts/
+chmod +x /home/clover/catkin_ws/src/clover/clover_simulation/scripts/box.py
+chmod +x /home/clover/catkin_ws/src/clover/clover_simulation/scripts/circle.py
+chmod +x /home/clover/catkin_ws/src/clover/clover_simulation/scripts/romb.py
+chmod +x /home/clover/catkin_ws/src/clover/clover_simulation/scripts/triangle.py
 
 # Копирование файла simulator.launch с заменой
 cp -f ./simulator.launch /home/clover/catkin_ws/src/clover/clover_simulation/launch/
