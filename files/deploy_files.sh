@@ -6,6 +6,8 @@ cp -r ./launch /home/clover/catkin_ws/src/clover/clover/
 # Копирование папки clover5 с заменой
 cp -r ./clover5 /home/clover/.gazebo/models/
 
+cp -r ./aruco_map_nto_txt /home/clover/.gazebo/models/
+
 # Копирование python-скриптов с заменой
 cp -f ./box.py ./circle.py ./romb.py ./triangle.py /home/clover/catkin_ws/src/clover/clover_simulation/scripts/
 
