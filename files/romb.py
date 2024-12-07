@@ -108,6 +108,9 @@ if __name__ == '__main__':
         #speed = 0.5
 
         while not rospy.is_shutdown():
-            move_object(speed, MOVE_DISTANCE, OBJECT_NAME)
+            try:
+                move_object(speed, MOVE_DISTANCE, OBJECT_NAME)
+            except:
+                rospy.loginfo(f"TriangleS error")
     except rospy.ROSInterruptException:
         pass
