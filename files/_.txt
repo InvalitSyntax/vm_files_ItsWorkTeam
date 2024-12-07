@@ -1,0 +1,7 @@
+папку launch - вставить папку с заменой файлов в /home/clover/catkin_ws/src/clover/clover/
+папку clover5 - вставить папку с заменой файлов в /home/clover/.gazebo/models/
+box.py, circle.py, romb.py, triangle.py - поместить в /home/clover/catkin_ws/src/clover/clover_simulation/scripts/
+simulator.launch - поместить в /home/clover/catkin_ws/src/clover/clover_simulation/launch/
+clover_aruce.world - поместить в /home/clover/catkin_ws/src/clover/clover_simulation/resources/worlds/
+triangle.dae, dodecaedr.dae - поместить в /home/clover/
+map_nto.txt - поместить в /home/clover/catkin_ws/src/clover/aruco_pose/map/
