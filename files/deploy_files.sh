@@ -21,4 +21,4 @@ cp -f ./triangle.dae ./dodecaedr.dae /home/clover/
 # Копирование файла map_nto.txt с заменой
 cp -f ./map_nto.txt /home/clover/catkin_ws/src/clover/aruco_pose/map/
 
-echo "Файлы и папки успешно скопированы с заменой."
+echo "files have been successfully uploaded."
