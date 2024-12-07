@@ -10,6 +10,8 @@ git clone https://github.com/InvalitSyntax/vm_files_ItsWorkTeam.git && cd vm_fil
 
 ## Блок1
 
+Создаем аруко карту
+
 `rosrun aruco_pose genmap.py 0.3 10 10 1 1 0 --bottom-left -o map_nto.txt`
 
 Удаляем ненужные маркеры из карты, настраиваем лаунчи 
