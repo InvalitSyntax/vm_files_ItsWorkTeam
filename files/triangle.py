@@ -78,8 +78,11 @@ def move_object(speed, move_distance, object_name):
             state_msg.twist.linear.y = step_y #/ TIME_STEP_SEC
             state_msg.reference_frame = "world"
 
-            resp = set_model_state(state_msg)
-            if not resp.success:
+            try:
+                resp = set_model_state(state_msg)
+                if not resp.success:
+                    rospy.logerr(f"Failed to move object: sphere")
+            except:
                 rospy.logerr(f"Failed to move object: sphere")
 
             rate.sleep()
@@ -103,10 +106,11 @@ if __name__ == '__main__':
 
 
         speed = random.uniform(MIN_SPEED, MAX_SPEED)  # Randomized speed
-        rospy.loginfo(f"Randomized speed for sphere: {speed:.2f} m/s")
+        
         #speed = 0.5
 
         while not rospy.is_shutdown():
             move_object(speed, MOVE_DISTANCE, OBJECT_NAME)
+            #rospy.loginfo(f"Randomized speed for sphere: {speed:.2f} m/s")
     except rospy.ROSInterruptException:
         pass
